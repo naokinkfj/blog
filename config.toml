@@ -1,0 +1,17 @@
+baseurl = "http://naokinkfj.github.io/"
+languageCode = "ja"
+title = "メモ帳"
+theme = "nofancy"
+# Copyright notice. This is displayer in the footer.
+copyright = "Copyright (c) 2015, Naoki Fujii; all rights reserved."
+[params]
+    highlight="solarized_dark"
+[author]
+    name = "Naoki Fujii"
+    twitter = "naokinkfj"
+    github = "naokinkfj"
+    # linkedin = "YOUR LINKEDIN ID"
+    # facebook = "YOUR FB ID"
+    # gaID = "YOUR Google Analytics Tracking ID"
+[permalinks]
+    post = "/:year/:month/:day/:filename/"
