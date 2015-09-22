@@ -19,13 +19,13 @@ build:
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
-steps:
-  - arjen/hugo-build@1.6.1
-    theme: nofancy
-    prod_branches: master
+  steps:
+    - arjen/hugo-build@1.6.1:
+      theme: nofancy
+      prod_branches: master
 
 deploy:
   steps:
     - gh-pages:
-        token: $GIT_TOKEN
+    token: $GIT_TOKEN
      basedir: public
