@@ -15,8 +15,8 @@ deployment:
   master:
     branch: master
     commands:
-      - git clone git@github.com:naokinkfj/blog.git public
+      - git clone git@github.com:naokinkfj/naokinkfj.github.io.git public
       - hugo
       - cd public && git add .
       - cd public && git commit -m "[ci skip] publish"
-      - cd public && git push origin gh-pages
+      - cd public && git push origin master
