@@ -18,5 +18,5 @@ deployment:
       - git clone git@github.com:naokinkfj/naokinkfj.github.io.git public
       - hugo
       - cd public && git add .
-      - cd public && git commit -m "[ci skip] publish"
+      - cd public && git commit -m "deploy from circleci"
       - cd public && git push origin master
