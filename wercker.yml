@@ -2,10 +2,11 @@ box: debian
 build:
     steps:
         - arjen/hugo-build@1.6.1:
+            version: 0.14
             theme: nofancy
-            flags: --buildDrafts=true
+            flags: --buildDrafts=false
 deploy:
     steps:
-        - lukevivier/gh-pages@0.2.1:
+        - uetchy/gh-pages@0.2.3:
             token: $GIT_TOKEN
             basedir: public
