@@ -1,11 +1,12 @@
 box: debian
 build:
-  steps:
-    - arjen/hugo-build@1.6.1:
-        theme: nofancy
-        flags: --buildDrafts=true
+    steps:
+        - arjen/hugo-build@1.6.1:
+            theme: nofancy
+            flags: --buildDrafts=true
 deploy:
-  steps:
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        basedir: public
+    steps:
+        - lukevivier/gh-pages@0.2.1:
+            token: $GIT_TOKEN
+            repo: naokinkfj/blog
+            basedir: public
